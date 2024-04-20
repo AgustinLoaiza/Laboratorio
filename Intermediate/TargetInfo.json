@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Laboratorio",
+			"Path": "C:\\Users\\User\\Desktop\\Taller de Experimentos\\Laboratorio\\Source\\Laboratorio.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "LaboratorioEditor",
+			"Path": "C:\\Users\\User\\Desktop\\Taller de Experimentos\\Laboratorio\\Source\\LaboratorioEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
