@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Laboratorio.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{3946C1B8-8EF5-4425-B74B-F64878D8BA03}</UniqueIdentifier>
+      <UniqueIdentifier>{81E4DC3E-994A-42E3-8169-E2BEBD6FFAC9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Laboratorio.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\LaboratorioEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{888F4AB6-BAA2-45BC-AC6C-19FFC184EEAB}</UniqueIdentifier>
+      <UniqueIdentifier>{243A78D3-340C-4BB8-B110-0710CECE63E0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Laboratorio">
-      <UniqueIdentifier>{147AA378-37BE-41E7-9785-92D7EE65F094}</UniqueIdentifier>
+      <UniqueIdentifier>{0CFA884B-9B96-4CC7-A622-BF12DA60E8F5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Laboratorio\Laboratorio.Build.cs">
       <Filter>Source\Laboratorio</Filter>
@@ -63,6 +65,12 @@
       <Filter>Source\Laboratorio</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Laboratorio\NaveEnemiga.h">
+      <Filter>Source\Laboratorio</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Laboratorio\TallerGeneral.cpp">
+      <Filter>Source\Laboratorio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Laboratorio\TallerGeneral.h">
       <Filter>Source\Laboratorio</Filter>
     </ClInclude>
   </ItemGroup>

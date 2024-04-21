@@ -9,6 +9,14 @@ ANaveEnemiga::ANaveEnemiga()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Mallas/24d9db5338b2_meteoro__3d_asset_0.24d9db5338b2_meteoro__3d_asset_0'"));
+	// Create the mesh component
+	mallaNaveEnemiga = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Meteoro"));
+	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
+	mallaNaveEnemiga->SetupAttachment(RootComponent);
+	GetActorRelativeScale3D();
+	SetActorScale3D(FVector(2.0f, 2.0f, 2.0f));
+	RootComponent = mallaNaveEnemiga;
 }
 
 // Called when the game starts or when spawned
@@ -23,5 +31,21 @@ void ANaveEnemiga::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ANaveEnemiga::Mover(float DeltaTime)
+{
+}
+
+void ANaveEnemiga::Disparar()
+{
+}
+
+void ANaveEnemiga::Destruirse()
+{
+}
+
+void ANaveEnemiga::Escapar()
+{
 }
 
