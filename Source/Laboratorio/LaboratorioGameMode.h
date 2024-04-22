@@ -6,6 +6,10 @@
 #include "GameFramework/GameModeBase.h"
 #include "LaboratorioGameMode.generated.h"
 
+class ANaveEnemiga;
+class ANaveAerea;
+class ANaveTerrestre;
+
 UCLASS(MinimalAPI)
 class ALaboratorioGameMode : public AGameModeBase
 {
@@ -13,6 +17,8 @@ class ALaboratorioGameMode : public AGameModeBase
 
 public:
 	ALaboratorioGameMode();
+
+	TArray<ANaveEnemiga* >TANavesEnemigas;
 
 protected:
 	virtual void BeginPlay() override;

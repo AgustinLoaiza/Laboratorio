@@ -13,7 +13,11 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Inc\Laboratorio\LaboratorioPawn.generated.h
-C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Source\Laboratorio\TallerGeneral.h
+C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Source\Laboratorio\NaveAerea.h
 C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Source\Laboratorio\NaveEnemiga.h
 C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Inc\Laboratorio\NaveEnemiga.generated.h
+C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Inc\Laboratorio\NaveAerea.generated.h
+C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Source\Laboratorio\NaveTerrestre.h
+C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Inc\Laboratorio\NaveTerrestre.generated.h
+C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Source\Laboratorio\TallerGeneral.h
 C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Inc\Laboratorio\TallerGeneral.generated.h

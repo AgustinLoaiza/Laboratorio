@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define LABORATORIO_LaboratorioGameMode_generated_h
 
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_SPARSE_DATA
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_RPC_WRAPPERS
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_INCLASS_NO_PURE_DECLS \
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_SPARSE_DATA
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_RPC_WRAPPERS
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesALaboratorioGameMode(); \
 	friend struct Z_Construct_UClass_ALaboratorioGameMode_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ALaboratorioGameMode)
 
 
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_INCLASS \
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesALaboratorioGameMode(); \
 	friend struct Z_Construct_UClass_ALaboratorioGameMode_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ALaboratorioGameMode)
 
 
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_STANDARD_CONSTRUCTORS \
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	LABORATORIO_API ALaboratorioGameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ALaboratorioGameMode) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_ENHANCED_CONSTRUCTORS \
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	LABORATORIO_API ALaboratorioGameMode(ALaboratorioGameMode&&); \
@@ -58,28 +58,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ALaboratorioGameMode)
 
 
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_PRIVATE_PROPERTY_OFFSET
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_9_PROLOG
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_GENERATED_BODY_LEGACY \
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_PRIVATE_PROPERTY_OFFSET
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_13_PROLOG
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_PRIVATE_PROPERTY_OFFSET \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_SPARSE_DATA \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_RPC_WRAPPERS \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_INCLASS \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_STANDARD_CONSTRUCTORS \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_PRIVATE_PROPERTY_OFFSET \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_SPARSE_DATA \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_RPC_WRAPPERS \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_INCLASS \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_GENERATED_BODY \
+#define Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_PRIVATE_PROPERTY_OFFSET \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_SPARSE_DATA \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_INCLASS_NO_PURE_DECLS \
-	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_12_ENHANCED_CONSTRUCTORS \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_PRIVATE_PROPERTY_OFFSET \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_SPARSE_DATA \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_INCLASS_NO_PURE_DECLS \
+	Laboratorio_Source_Laboratorio_LaboratorioGameMode_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

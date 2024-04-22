@@ -3,3 +3,7 @@ C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Source\Laboratorio\Tall
 C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Source\Laboratorio\NaveEnemiga.h
 C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Inc\Laboratorio\NaveEnemiga.generated.h
 C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Inc\Laboratorio\TallerGeneral.generated.h
+C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Source\Laboratorio\NaveAerea.h
+C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Inc\Laboratorio\NaveAerea.generated.h
+C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Source\Laboratorio\NaveTerrestre.h
+C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Inc\Laboratorio\NaveTerrestre.generated.h
