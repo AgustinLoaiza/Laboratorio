@@ -2,6 +2,8 @@
 
 
 #include "TallerGeneral.h"
+#include "NaveAerea.h"
+#include "NaveTerrestre.h"
 
 // Sets default values
 ATallerGeneral::ATallerGeneral()
@@ -25,7 +27,26 @@ void ATallerGeneral::Tick(float DeltaTime)
 
 }
 
-//ANaveEnemiga* ATallerGeneral::PedirNave()
-//{
-//	ANaveEnemiga* NaveEnemiga = FabricarNave();
-//}
+ANaveEnemiga* ATallerGeneral::FabricarNave(FString TipoNave, UWorld* World, FVector SpawnLocation, FRotator SpawnRotation)
+{
+    if (!World)
+    {
+        return nullptr;
+    }
+    FVector SpawnLocationAdjusted = SpawnLocation;
+    if (TipoNave == "Aerea")
+    {
+        ANaveAerea* NuevaNave = World->SpawnActor<ANaveAerea>(SpawnLocationAdjusted, SpawnRotation);
+        return NuevaNave;
+    }
+    else if (TipoNave == "Terrestre")
+    {
+        ANaveTerrestre* NuevaNave = World->SpawnActor<ANaveTerrestre>(SpawnLocationAdjusted, SpawnRotation);
+        return NuevaNave;
+    }
+
+    return nullptr;
+}
+
+
+

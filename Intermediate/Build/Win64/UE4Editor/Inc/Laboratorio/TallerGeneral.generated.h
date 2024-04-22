@@ -8,14 +8,26 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UWorld;
+struct FVector;
+struct FRotator;
+class ANaveEnemiga;
 #ifdef LABORATORIO_TallerGeneral_generated_h
 #error "TallerGeneral.generated.h already included, missing '#pragma once' in TallerGeneral.h"
 #endif
 #define LABORATORIO_TallerGeneral_generated_h
 
 #define Laboratorio_Source_Laboratorio_TallerGeneral_h_13_SPARSE_DATA
-#define Laboratorio_Source_Laboratorio_TallerGeneral_h_13_RPC_WRAPPERS
-#define Laboratorio_Source_Laboratorio_TallerGeneral_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define Laboratorio_Source_Laboratorio_TallerGeneral_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFabricarNave);
+
+
+#define Laboratorio_Source_Laboratorio_TallerGeneral_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFabricarNave);
+
+
 #define Laboratorio_Source_Laboratorio_TallerGeneral_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATallerGeneral(); \

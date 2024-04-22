@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "NaveEnemiga.generated.h"
 
-UCLASS()
+UCLASS(abstract)
 class LABORATORIO_API ANaveEnemiga : public AActor
 {
 	GENERATED_BODY()
@@ -71,10 +71,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 protected:
-	void Mover(float DeltaTime);
-	void Disparar();
-	void Destruirse();
-	void Escapar();
+	void Mover(float DeltaTime) PURE_VIRTUAL(ANaveEnemiga::Mover,);
+	void Disparar() PURE_VIRTUAL(ANaveEnemiga::Disparar, );
+	void Destruirse() PURE_VIRTUAL(ANaveEnemiga::Destruirse, );
+	void Escapar() PURE_VIRTUAL(ANaveEnemiga::Escapar, );
 
 
 };

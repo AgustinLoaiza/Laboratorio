@@ -11,10 +11,13 @@ UCLASS()
 class LABORATORIO_API ATallerGeneral : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	ATallerGeneral();
+
+	UFUNCTION(BlueprintCallable, Category = "TallerGeneral")
+	static ANaveEnemiga* FabricarNave(FString TipoNave, UWorld* World, FVector SpawnLocation, FRotator SpawnRotation);
 
 protected:
 	// Called when the game starts or when spawned
@@ -23,8 +26,5 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	/*virtual ANaveEnemiga* FabricarNave() PURE_VIRTUAL(ATallerGeneral::FabricarNave, return nullptr;);
-	ANaveEnemiga* PedirNave();*/
 
 };

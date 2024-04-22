@@ -9,9 +9,9 @@ ANaveEnemiga::ANaveEnemiga()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Mallas/24d9db5338b2_meteoro__3d_asset_0.24d9db5338b2_meteoro__3d_asset_0'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_QuadPyramid.Shape_QuadPyramid'"));
 	// Create the mesh component
-	mallaNaveEnemiga = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Meteoro"));
+	mallaNaveEnemiga = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("NaveEnemiga"));
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 	mallaNaveEnemiga->SetupAttachment(RootComponent);
 	GetActorRelativeScale3D();
@@ -33,19 +33,4 @@ void ANaveEnemiga::Tick(float DeltaTime)
 
 }
 
-void ANaveEnemiga::Mover(float DeltaTime)
-{
-}
-
-void ANaveEnemiga::Disparar()
-{
-}
-
-void ANaveEnemiga::Destruirse()
-{
-}
-
-void ANaveEnemiga::Escapar()
-{
-}
 

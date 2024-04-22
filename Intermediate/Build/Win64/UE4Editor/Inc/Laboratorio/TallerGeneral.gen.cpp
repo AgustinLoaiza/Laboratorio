@@ -17,9 +17,78 @@ void EmptyLinkFunctionForGeneratedCodeTallerGeneral() {}
 	LABORATORIO_API UClass* Z_Construct_UClass_ATallerGeneral();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Laboratorio();
+	ENGINE_API UClass* Z_Construct_UClass_UWorld_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
+	LABORATORIO_API UClass* Z_Construct_UClass_ANaveEnemiga_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ATallerGeneral::execFabricarNave)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_tipoNave);
+		P_GET_OBJECT(UWorld,Z_Param_World);
+		P_GET_STRUCT(FVector,Z_Param_SpawnLocation);
+		P_GET_STRUCT(FRotator,Z_Param_SpawnRotation);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(ANaveEnemiga**)Z_Param__Result=ATallerGeneral::FabricarNave(Z_Param_tipoNave,Z_Param_World,Z_Param_SpawnLocation,Z_Param_SpawnRotation);
+		P_NATIVE_END;
+	}
 	void ATallerGeneral::StaticRegisterNativesATallerGeneral()
 	{
+		UClass* Class = ATallerGeneral::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "FabricarNave", &ATallerGeneral::execFabricarNave },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics
+	{
+		struct TallerGeneral_eventFabricarNave_Parms
+		{
+			FString tipoNave;
+			UWorld* World;
+			FVector SpawnLocation;
+			FRotator SpawnRotation;
+			ANaveEnemiga* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_tipoNave;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_World;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_SpawnLocation;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_SpawnRotation;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_tipoNave = { "tipoNave", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TallerGeneral_eventFabricarNave_Parms, tipoNave), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_World = { "World", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TallerGeneral_eventFabricarNave_Parms, World), Z_Construct_UClass_UWorld_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_SpawnLocation = { "SpawnLocation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TallerGeneral_eventFabricarNave_Parms, SpawnLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_SpawnRotation = { "SpawnRotation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TallerGeneral_eventFabricarNave_Parms, SpawnRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TallerGeneral_eventFabricarNave_Parms, ReturnValue), Z_Construct_UClass_ANaveEnemiga_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_tipoNave,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_World,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_SpawnLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_SpawnRotation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::Function_MetaDataParams[] = {
+		{ "Category", "TallerGeneral" },
+		{ "ModuleRelativePath", "TallerGeneral.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATallerGeneral, nullptr, "FabricarNave", nullptr, nullptr, sizeof(TallerGeneral_eventFabricarNave_Parms), Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATallerGeneral_FabricarNave()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATallerGeneral_FabricarNave_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ATallerGeneral_NoRegister()
 	{
@@ -28,6 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeTallerGeneral() {}
 	struct Z_Construct_UClass_ATallerGeneral_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -37,6 +107,9 @@ void EmptyLinkFunctionForGeneratedCodeTallerGeneral() {}
 	UObject* (*const Z_Construct_UClass_ATallerGeneral_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_Laboratorio,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ATallerGeneral_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ATallerGeneral_FabricarNave, "FabricarNave" }, // 3291380906
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATallerGeneral_Statics::Class_MetaDataParams[] = {
@@ -52,11 +125,11 @@ void EmptyLinkFunctionForGeneratedCodeTallerGeneral() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x009000A4u,
@@ -71,7 +144,7 @@ void EmptyLinkFunctionForGeneratedCodeTallerGeneral() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATallerGeneral, 2164187374);
+	IMPLEMENT_CLASS(ATallerGeneral, 641289947);
 	template<> LABORATORIO_API UClass* StaticClass<ATallerGeneral>()
 	{
 		return ATallerGeneral::StaticClass();

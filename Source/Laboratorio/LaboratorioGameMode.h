@@ -13,6 +13,13 @@ class ALaboratorioGameMode : public AGameModeBase
 
 public:
 	ALaboratorioGameMode();
+
+protected:
+	virtual void BeginPlay() override;
+
+public:
+
+	void Tick(float DeltaTime) override;
 };
 
 
