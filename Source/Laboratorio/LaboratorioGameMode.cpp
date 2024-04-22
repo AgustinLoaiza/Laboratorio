@@ -17,19 +17,33 @@ void ALaboratorioGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UWorld* World = GetWorld();
-	if (!World)
-	{
-		return;
-	}
-
 	// Configura las coordenadas de spawn para cada tipo de nave
-	FVector UbicacionNaveAerea = FVector(500.0f, 800.0f, 250.0f);
-	FVector UbicacionNaveTerrestre = FVector(500.0f, 1000.0f, 250.0f); 
+	FVector UbicacionNaveAerea = FVector(300.0f, -1200.0f, 250.0f); 
+	FVector UbicacionNaveTerrestre = FVector(-300.0f, -1000.0f, 250.0f); 
 
-	// Usa la fábrica para crear las naves enemigas con diferentes ubicaciones de spawn
-	ANaveEnemiga* NuevaNaveAerea = ATallerGeneral::FabricarNave("Aerea", World, UbicacionNaveAerea, FRotator::ZeroRotator);
-	ANaveEnemiga* NuevaNaveTerrestre = ATallerGeneral::FabricarNave("Terrestre", World, UbicacionNaveTerrestre, FRotator::ZeroRotator);
+	UWorld* World = GetWorld();
+	
+	if (World!=nullptr)
+	{
+		for (int i = 0; i < 4; i++) {
+			FVector PosicionNaveActual = FVector(UbicacionNaveAerea.X, UbicacionNaveAerea.Y + i * 2200, UbicacionNaveAerea.Z);
+			ANaveEnemiga* NuevaNaveAerea = ATallerGeneral::FabricarNave("Aerea", World, PosicionNaveActual, FRotator::ZeroRotator);
+			TANavesEnemigas.Push(NuevaNaveAerea);
+		}
+		for (int i = 0; i < 4; i++) {
+			FVector PosicionNaveActual = FVector(UbicacionNaveTerrestre.X, UbicacionNaveTerrestre.Y + i * 1800, UbicacionNaveTerrestre.Z);
+			ANaveEnemiga* NuevaNaveTerrestre = ATallerGeneral::FabricarNave("Terrestre", World, PosicionNaveActual, FRotator::ZeroRotator); 
+			TANavesEnemigas.Push(NuevaNaveTerrestre); 
+		}
+	}
+	//if (!World)
+	//{
+	//	return;
+	//}
+
+	//// Aplicacion del patron para creacion de naves
+	//ANaveEnemiga* NuevaNaveAerea = ATallerGeneral::FabricarNave("Aerea", World, UbicacionNaveAerea, FRotator::ZeroRotator);
+	//ANaveEnemiga* NuevaNaveTerrestre = ATallerGeneral::FabricarNave("Terrestre", World, UbicacionNaveTerrestre, FRotator::ZeroRotator);
 }
 
 void ALaboratorioGameMode::Tick(float DeltaTime)
