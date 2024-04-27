@@ -17,7 +17,7 @@ public:
 	ATallerGeneral();
 
 	UFUNCTION(BlueprintCallable, Category = "TallerGeneral")
-	static ANaveEnemiga* FabricarNave(FString TipoNave, UWorld* World, FVector SpawnLocation, FRotator SpawnRotation);
+	static ANaveEnemiga* FabricarNave(FString NaveaFabricar, UWorld* World, FVector SpawnLocation, FRotator SpawnRotation);
 
 protected:
 	// Called when the game starts or when spawned

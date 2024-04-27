@@ -17,5 +17,5 @@ class LABORATORIO_API ANaveAerea : public ANaveEnemiga
 
 public:
 	ANaveAerea();
-	FString TipoNave = "Aerea";
+	FString NaveaFabricar = "Aerea";
 };

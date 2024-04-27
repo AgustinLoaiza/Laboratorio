@@ -17,6 +17,6 @@ class LABORATORIO_API ANaveTerrestre : public ANaveEnemiga
 public:
 	ANaveTerrestre();
 
-	FString TipoNave = "Terrestre";
+	FString NaveaFabricar = "Terrestre";
 	
 };

@@ -27,22 +27,18 @@ void ATallerGeneral::Tick(float DeltaTime)
 
 }
 
-ANaveEnemiga* ATallerGeneral::FabricarNave(FString TipoNave, UWorld* World, FVector SpawnLocation, FRotator SpawnRotation)
+ANaveEnemiga* ATallerGeneral::FabricarNave(FString NaveaFabricar, UWorld* World, FVector SpawnLocation, FRotator SpawnRotation)
 {
-    if (!World)
+    FVector UbicacionSpawneo = SpawnLocation;
+    if (NaveaFabricar == "Aerea")
     {
-        return nullptr;
+        ANaveAerea* NaveFabricada = World->SpawnActor<ANaveAerea>(UbicacionSpawneo, SpawnRotation);
+        return NaveFabricada;
     }
-    FVector SpawnLocationAdjusted = SpawnLocation;
-    if (TipoNave == "Aerea")
+    else if (NaveaFabricar == "Terrestre")
     {
-        ANaveAerea* NuevaNave = World->SpawnActor<ANaveAerea>(SpawnLocationAdjusted, SpawnRotation);
-        return NuevaNave;
-    }
-    else if (TipoNave == "Terrestre")
-    {
-        ANaveTerrestre* NuevaNave = World->SpawnActor<ANaveTerrestre>(SpawnLocationAdjusted, SpawnRotation);
-        return NuevaNave;
+        ANaveTerrestre* NaveFabricada = World->SpawnActor<ANaveTerrestre>(UbicacionSpawneo, SpawnRotation);
+        return NaveFabricada;
     }
 
     return nullptr;

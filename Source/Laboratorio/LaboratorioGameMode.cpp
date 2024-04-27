@@ -26,12 +26,12 @@ void ALaboratorioGameMode::BeginPlay()
 	if (World!=nullptr)
 	{
 		for (int i = 0; i < 4; i++) {
-			FVector PosicionNaveActual = FVector(UbicacionNaveAerea.X, UbicacionNaveAerea.Y + i * 2200, UbicacionNaveAerea.Z);
+			FVector PosicionNaveActual = FVector(UbicacionNaveAerea.X, UbicacionNaveAerea.Y + i * 220, UbicacionNaveAerea.Z);
 			ANaveEnemiga* NuevaNaveAerea = ATallerGeneral::FabricarNave("Aerea", World, PosicionNaveActual, FRotator::ZeroRotator);
 			TANavesEnemigas.Push(NuevaNaveAerea);
 		}
 		for (int i = 0; i < 4; i++) {
-			FVector PosicionNaveActual = FVector(UbicacionNaveTerrestre.X, UbicacionNaveTerrestre.Y + i * 1800, UbicacionNaveTerrestre.Z);
+			FVector PosicionNaveActual = FVector(UbicacionNaveTerrestre.X, UbicacionNaveTerrestre.Y + i * 180, UbicacionNaveTerrestre.Z);
 			ANaveEnemiga* NuevaNaveTerrestre = ATallerGeneral::FabricarNave("Terrestre", World, PosicionNaveActual, FRotator::ZeroRotator); 
 			TANavesEnemigas.Push(NuevaNaveTerrestre); 
 		}

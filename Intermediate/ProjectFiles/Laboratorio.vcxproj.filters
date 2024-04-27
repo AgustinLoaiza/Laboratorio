@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Laboratorio.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{05612260-AD3F-4BA2-B322-88F3A5C0E5DC}</UniqueIdentifier>
+      <UniqueIdentifier>{2E2C160F-7BB6-4BB5-BB4F-C573DAA6EF1C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Laboratorio.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{3D4786D8-5106-4368-8C7B-7D3E0B710450}</UniqueIdentifier>
+      <UniqueIdentifier>{D1C8C494-AD55-495B-975B-03B02D489788}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,8 +32,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Laboratorio">
-      <UniqueIdentifier>{8EA1810A-FBA2-46E7-9352-AFAA4AB12BC1}</UniqueIdentifier>
+      <UniqueIdentifier>{414ED783-626D-4411-9D0D-759DBA119CF4}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Laboratorio\Boqueron.cpp">
+      <Filter>Source\Laboratorio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Laboratorio\Boqueron.h">
+      <Filter>Source\Laboratorio</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Laboratorio\Laboratorio.Build.cs">
       <Filter>Source\Laboratorio</Filter>
     </None>
@@ -77,6 +83,24 @@
       <Filter>Source\Laboratorio</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Laboratorio\NaveTerrestre.h">
+      <Filter>Source\Laboratorio</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Laboratorio\Obrero.cpp">
+      <Filter>Source\Laboratorio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Laboratorio\Obrero.h">
+      <Filter>Source\Laboratorio</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Laboratorio\ObreroGasolinera.cpp">
+      <Filter>Source\Laboratorio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Laboratorio\ObreroGasolinera.h">
+      <Filter>Source\Laboratorio</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Laboratorio\PlanosDeAsedio.cpp">
+      <Filter>Source\Laboratorio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Laboratorio\PlanosDeAsedio.h">
       <Filter>Source\Laboratorio</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Laboratorio\TallerGeneral.cpp">
