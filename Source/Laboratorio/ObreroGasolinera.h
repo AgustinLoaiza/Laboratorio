@@ -30,7 +30,11 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void ConstruirGasolinera() override;
+	virtual void ConstruirArmeria() override;
+	virtual void ConstruirEscudo() override;
+	virtual void ConstruirMotor() override;
+	virtual void ConstruirComponenteChino() override;
 
-	virtual class ABoqueron* GetBoqueron(); //override;
+	virtual class ABoqueron* GetBoqueron() override;
 
 };

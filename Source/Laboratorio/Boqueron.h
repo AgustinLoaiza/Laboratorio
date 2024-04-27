@@ -22,7 +22,7 @@ private:
 	AActor* Escudo;
 	AActor* Motor;
 	AActor* ComponenteChino;
-
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -36,5 +36,4 @@ public:
 	void SetEscudo(AActor* _Escudo);
 	void SetMotor(AActor* _Motor);
 	void SetComponenteChino(AActor* _ComponenteChino);
-
 };

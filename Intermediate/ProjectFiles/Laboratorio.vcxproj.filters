@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Laboratorio.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2E2C160F-7BB6-4BB5-BB4F-C573DAA6EF1C}</UniqueIdentifier>
+      <UniqueIdentifier>{C257E99D-B755-4E01-8EAB-3366F2271891}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Laboratorio.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{D1C8C494-AD55-495B-975B-03B02D489788}</UniqueIdentifier>
+      <UniqueIdentifier>{427ABBCD-D32C-4C3F-830B-82C1C701B3C7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,12 +32,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Laboratorio">
-      <UniqueIdentifier>{414ED783-626D-4411-9D0D-759DBA119CF4}</UniqueIdentifier>
+      <UniqueIdentifier>{2DFA5A78-5091-468B-8DD5-250C1C7BB2AB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Laboratorio\Boqueron.cpp">
       <Filter>Source\Laboratorio</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Laboratorio\Boqueron.h">
+      <Filter>Source\Laboratorio</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Laboratorio\HansKundt.cpp">
+      <Filter>Source\Laboratorio</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Laboratorio\HansKundt.h">
       <Filter>Source\Laboratorio</Filter>
     </ClInclude>
     <None Include="..\..\Source\Laboratorio\Laboratorio.Build.cs">

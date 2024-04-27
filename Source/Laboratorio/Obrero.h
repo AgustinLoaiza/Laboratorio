@@ -27,4 +27,5 @@ public:
 	virtual void ConstruirEscudo() = 0;
 	virtual void ConstruirMotor() = 0;
 	virtual void ConstruirComponenteChino() = 0;
+	virtual class ABoqueron* GetBoqueron() = 0;
 };

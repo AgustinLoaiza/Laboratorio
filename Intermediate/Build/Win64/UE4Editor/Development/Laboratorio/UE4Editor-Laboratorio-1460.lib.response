@@ -1,0 +1,37 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Laboratorio-1460.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\LaboratorioEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\Boqueron.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\HansKundt.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\Laboratorio.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\LaboratorioGameMode.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\LaboratorioPawn.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\LaboratorioProjectile.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\NaveAerea.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\NaveEnemiga.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\NaveTerrestre.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\Obrero.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\ObreroGasolinera.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\PlanosDeAsedio.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\TallerGeneral.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\Boqueron.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\HansKundt.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\Laboratorio.init.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\LaboratorioGameMode.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\LaboratorioPawn.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\LaboratorioProjectile.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\NaveAerea.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\NaveEnemiga.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\NaveTerrestre.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\Obrero.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\ObreroGasolinera.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\PlanosDeAsedio.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\TallerGeneral.gen.cpp.obj"
+"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\Default.rc2.res"
+/OUT:"C:\Users\User\Desktop\Taller de Experimentos\Laboratorio\Intermediate\Build\Win64\UE4Editor\Development\Laboratorio\UE4Editor-Laboratorio-1460.lib"
